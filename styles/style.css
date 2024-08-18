@@ -348,62 +348,79 @@
 }
 
 .footer {
-  font-family: Arial, sans-serif;
   box-sizing: border-box;
+
   background-color: #1f1f1f;
-  color: #ffffff;
-  width: 100%;
+  color: white;
+  padding: 60px 80px;
 }
 
 .footer__columns {
+  /* todas as 3 colunas */
   display: flex;
-  padding: 60px 80px;
-  margin-bottom: 100px;
+  justify-content: space-between;
+}
+.footer__column {
+  /* as 3 divs logo hora e redes sociais*/
+  margin: 0;
 }
 
 .footer__column_content_hours {
-  margin: auto;
-  margin-right: 80px;
+  /* div horario de funcionamento */
+  margin-left: auto;
 }
 
 .footer__column_content_social {
-  margin-right: 0;
+  /* div redes sociais*/
+  margin-left: 80px;
 }
 
 .footer__logo {
+  /* logo div 1 */
   height: 80px;
-  height: 58px;
+  width: 58px;
 }
 
 .footer__column-heading {
+  /* so os titulos horario e rede social*/
+  margin-bottom: 20px;
   margin-top: 0;
-  margin-left: 80px;
 }
 
 .footer__list {
+  /* ul divs */
+  /* O código abaixo remove os estilos do navegador padrão para listas */
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__list-item {
+  /* li divs*/
+  color: white;
+  text-decoration: none;
   margin-bottom: 16px;
 }
 
 .footer__column-link {
+  /* facebook e instagram*/
   color: white;
   text-decoration: none;
+  align-items: center;
+  display: flex;
+  column-gap: 10px;
 }
 
 .footer__social-icon {
+  /* icons facebook e instagram */
   height: 16px;
   width: 16px;
-  margin-right: 10px;
 }
 
 .footer__copyright {
-  padding-left: 80px;
-  margin: 0;
-  padding-bottom: 60px;
+  font-size: 16px;
+  margin-top: 100px;
+  margin-bottom: 0;
 }
